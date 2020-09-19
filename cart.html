@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta name="viewport" content="width= divice-width, initial-scale=1.0">
+     <link href="css/style.css" rel="stylesheet">
+	 <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <title>hamidurshohag.com</title>
+  </head>
+  <body>
+  <!--------------------------header part------------------------------------->
+   
+   <div class="container">
+      <div class="navbar">
+           <div class="logo" >
+		      <img src="image/logo.png" width="125px"> 
+		   </div>
+		   <nav>
+		     <ul id="manu">
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="product.html">Product</a></li>
+			   <li><a href="">About</a></li>
+			   <li><a href="account.html">Contact</a></li>
+			   <li><a href="account.html">Account</a></li>
+			 </ul>
+		   </nav>
+		   <img src="image/cart.png" width="30px" height="30px">
+		     <img src="image/menu.png" class="manu-icon" onclick="manutoggle()" >
+      </div>
+	  
+   </div>
+   
+  <!--------------------------header part End------------------------------------->
+  
+
+  
+	<!--------------------------Cart itaem details ------------------------------------->
+	 <div class="small-catagory cartpage">
+	     <table>
+		    <tr>
+			   <th>Product</th>
+				<th>Quentity</th>
+				<th>Subtotal</th>
+			 </tr>
+			 <tr>
+			    <td>
+				 <div class="cartinfo">
+					 <img src="image/ss4.jpg" width="200px;">
+					 <div >
+					   <p>printed sirt</p>
+						 <small>Price :$50</small>
+						 <br>
+						 <a href="">Remove</a>
+					 </div>
+					</div>
+				 </td>
+				 <td><input type="number" value="1" ></td>
+				 <td>$50.00</td>
+			 </tr>
+			 			 <tr>
+			    <td>
+				 <div class="cartinfo">
+					 <img src="image/t4.jpg" width="200px;">
+					 <div >
+					   <p>printed sirt</p>
+						 <small>Price :$50</small>
+						 <br>
+						 <a href="">Remove</a>
+					 </div>
+					</div>
+				 </td>
+				 <td><input type="number" value="1" ></td>
+				 <td>$50.00</td>
+			 </tr>
+	     	 <tr>
+			    <td>
+				 <div class="cartinfo">
+					 <img src="image/t1.jpg" width="200px;">
+					 <div >
+					   <p>printed sirt</p>
+						 <small>Price :$50</small>
+						 <br>
+						 <a href="">Remove</a>
+					 </div>
+					</div>
+				 </td>
+				 <td><input type="number" value="1" ></td>
+				 <td>$50.00</td>
+			 </tr>
+		 </table>
+		<div class="totalprice">
+		    <table>
+		   <tr>
+			    <td>subtotal</td>
+			    <td>$500.00</td>
+			 </tr>
+			  <tr>
+			  <td>tax</td>
+			    <td>$500.00</td>
+			 </tr>
+			 <tr>
+			  <td>total</td>
+			    <td>$500.00</td>
+			 </tr>
+		 </table>
+		 
+		 </div>
+		 
+	  </div>
+  
+  
+  
+ <!--------------------------Footer  ------------------------------------->
+ <div class="footer">
+       <div class="container">
+          <div class="row">
+               <div class="footer-col-1">
+                  <h3>download app</h3>
+				  <p> Please go to ..</p>
+				  <div class="app-logo">
+				     <img src="image/ap2.png">
+					  <img src="image/ap2.png">
+				  </div>
+               </div>
+			   <div class="footer-col-2">
+                   <img src="image/logo.png">
+				  <p> We are  always with you..</p>
+               </div>
+			   <div class="footer-col-3">
+                  <h3>Usefull link</h3>
+				  <ul> 
+				     <li>Blog</li>
+					 <li>Drubo Tutorial</li>
+					 <li>Free thinker </li>
+					 <li>Facebook group</li>
+				  </ul>
+               </div>
+			   <div class="footer-col-4">
+                  <h3>Follow us</h3>
+				  <ul> 
+				     <li>  <i class="fa fa-facebook"></i> </li>
+					 <li><i class="fa fa-whatsapp"></i></li>
+					 <li><i class="fa fa-twitter"></i></li>
+					 <li><i class="fa fa-youtube"></i></li>
+				  </ul>
+               </div>
+          </div>
+		  <hr>
+		  <p class="copyright">this website make by hamidur shohag</p>
+       </div>
+  </div>
+  <!--script----------------------------------------------------------->
+  <script> 
+  var manu = document.getElementByID("manu");
+       manu.style.max-height = "0px";
+	   function manutoggle(){
+	       if( manu.style.max-height == "0px"){
+		         manu.style.max-height = "200px";
+		   }
+		   else{
+		    manu.style.max-height = "0px";
+		   }
+	   }
+	  
+	   
+  </script>
+  </body>
+</html>

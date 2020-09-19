@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta name="viewport" content="width= divice-width, initial-scale=1.0">
+     <link href="css/style.css" rel="stylesheet">
+	 <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <title>hamidurshohag.com</title>
+  </head>
+  <body>
+  <!--------------------------header part------------------------------------->
+   
+   <div class="container">
+      <div class="navbar">
+           <div class="logo" >
+		      <img src="image/logo.png" width="125px"> 
+		   </div>
+		   <nav>
+		     <ul id="manu">
+			   <li><a href="index.html">Home</a></li>
+			   <li><a href="product.html">Product</a></li>
+			   <li><a href="">About</a></li>
+			   <li><a href="account.html">Contact</a></li>
+			   <li><a href="account.html">Account</a></li>
+			 </ul>
+		   </nav>
+		   <img src="image/cart.png" width="30px" height="30px">
+		    <img src="image/menu.png" class="manu-icon" onclick="manutoggle()" >
+      </div>
+	  
+   </div>
+   
+  <!--------------------------header part End------------------------------------->
+  
+
+  
+	<!-------------------------- ------------------------------------->
+ <div class="accountpage">
+	   <div class="container">
+	          <div class="row">
+		          <div class="col-2">
+				    <img src="image/bac-1.jpg" width="100%">
+				    </div>
+				  <div class="col-2">
+				      <div class="fromcontainer">
+					      <div class="frombtn">
+						     <span onclick="login">Loging</span>
+							   <span onclick="register">Registretion</span>
+							  <hr id="indicatior">
+						  </div>
+						  <form id="loginform">
+						    <input type="text" placeholder="User Name">
+							 <input type="password" placeholder="Password">
+							  <button type="submit" class="btn">login</button>
+							  <a href="">Forget pasword</a>
+						  </form  >
+						   <form id="regifonm">
+						    <input type="text" placeholder="User Name">
+							    <input type="email" placeholder="Email">
+							 <input type="password" placeholder="Password">
+							  <button type="submit" class="btn">Registretion</button>
+						  </form>
+					   </div>
+				    </div>
+		        </div>
+	         </div>
+	  </div>
+  
+  
+  
+ <!--------------------------Footer  ------------------------------------->
+<div class="footer">
+       <div class="container">
+          <div class="row">
+               <div class="footer-col-1">
+                  <h3>download app</h3>
+				  <p> Please go to ..</p>
+				  <div class="app-logo">
+				     <img src="image/ap2.png">
+					  <img src="image/ap2.png">
+				  </div>
+               </div>
+			   <div class="footer-col-2">
+                   <img src="image/logo.png">
+				  <p> We are  always with you..</p>
+               </div>
+			   <div class="footer-col-3">
+                  <h3>Usefull link</h3>
+				  <ul> 
+				     <li>Blog</li>
+					 <li>Drubo Tutorial</li>
+					 <li>Free thinker </li>
+					 <li>Facebook group</li>
+				  </ul>
+               </div>
+			   <div class="footer-col-4">
+                  <h3>Follow us</h3>
+				  <ul> 
+				     <li>  <i class="fa fa-facebook"></i> </li>
+					 <li><i class="fa fa-whatsapp"></i></li>
+					 <li><i class="fa fa-twitter"></i></li>
+					 <li><i class="fa fa-youtube"></i></li>
+				  </ul>
+               </div>
+          </div>
+		  <hr>
+		  <p class="copyright">this website make by hamidur shohag</p>
+       </div>
+  </div>
+  <!--script----------------------------------------------------------->
+  <script> 
+  var manu = document.getElementByID("manu");
+       manu.style.max-height = "0px";
+	   function manutoggle(){
+	       if( manu.style.max-height == "0px"){
+		         manu.style.max-height = "200px";
+		   }
+		   else{
+		    manu.style.max-height = "0px";
+		   }
+	   }
+	  
+	   
+  </script>
+	  
+	<script>
+	   var loginform = document.getElementByID("loginform");
+	  var regifonm  = document.getElementByID("regifonm ");
+	  var indicatior = document.getElementByID("indicatior ");
+		login
+      function register(){
+		  regifonm.style.transform = "translateX(0px) ";
+		  loginform.style.transform = "translateX(0px) ";
+		  indicatior.style.transform = "translateX(100px) ";
+	  }
+    function login(){
+		  regifonm.style.transform = "translateX(30px) ";
+		  loginform.style.transform = "translateX(300px) ";
+		 indicatior.style.transform = "translateX(00px) ";
+	  }
+		
+	  </script>
+	  
+	  
+	  
+  </body>
+</html>
